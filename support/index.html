@@ -5,79 +5,152 @@
   <title>Support | PL8 by NovaBuild</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      background-color: white;
-      color: black;
-      font-family: Arial, sans-serif;
-      margin: 40px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #282828; /* outer background */
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: #1c1c1c; /* inner card */
+      border-radius: 16px;
+      max-width: 860px;
+      width: 100%;
+      padding: 40px 32px;
+      text-align: left;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      animation: fadeInUp 0.6s ease-out;
       line-height: 1.6;
     }
-    h1, h2 {
-      margin-top: 1.5em;
+
+    h1, h2, h3 {
+      color: #fff;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      font-weight: 700;
     }
-    .contact-link {
-      color: #007AFF;
+
+    h1 {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p, li {
+      font-size: 16px;
+      color: #ccc;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    strong {
+      color: #fff;
+    }
+
+    a {
+      color: #2575fc;
       text-decoration: none;
     }
-    .contact-link:hover {
+
+    a:hover {
       text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #888;
+      text-align: center;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
-  <h1>PL8 Support</h1>
-  <p><strong>App:</strong> PL8 by NovaBuild</p>
-  <p><strong>Last Updated:</strong> September 5, 2025</p>
+  <div class="card">
+    <h1>PL8 Support</h1>
+    <p><strong>App:</strong> PL8 by NovaBuild</p>
+    <p><strong>Last Updated:</strong> September 5, 2025</p>
 
-  <h2>Getting Started</h2>
-  <p>
-    PL8 helps you cook smarter by organizing your pantry, fridge, and grocery list in one place. 
-    You can snap a photo of your fridge, scan items, or add them manually. PL8 then generates 
-    recipes that fit your serving size, dietary preferences, and ingredient needs. You can 
-    also browse unique recipes or view recommendations personalized just for you.
-  </p>
+    <h2>Getting Started</h2>
+    <p>
+      PL8 helps you cook smarter by organizing your pantry, fridge, and grocery list in one place. 
+      You can snap a photo of your fridge, scan items, or add them manually. PL8 then generates 
+      recipes that fit your serving size, dietary preferences, and ingredient needs. You can 
+      also browse unique recipes or view recommendations personalized just for you.
+    </p>
 
-  <h2>Common Questions</h2>
-  <h3>How do I add items to my inventory?</h3>
-  <p>
-    You can take a photo of your pantry or fridge, scan barcodes, or enter items manually. 
-    PL8 will track everything in your inventory so it’s ready when you plan meals.
-  </p>
+    <h2>Common Questions</h2>
+    <h3>How do I add items to my inventory?</h3>
+    <p>
+      You can take a photo of your pantry or fridge, scan barcodes, or enter items manually. 
+      PL8 will track everything in your inventory so it’s ready when you plan meals.
+    </p>
 
-  <h3>Can PL8 suggest recipes if I don’t add ingredients?</h3>
-  <p>
-    Yes. You can browse recipes and discover new ideas even without uploading your current 
-    ingredients. Recommendations will still reflect your dietary and serving preferences.
-  </p>
+    <h3>Can PL8 suggest recipes if I don’t add ingredients?</h3>
+    <p>
+      Yes. You can browse recipes and discover new ideas even without uploading your current 
+      ingredients. Recommendations will still reflect your dietary and serving preferences.
+    </p>
 
-  <h3>How do I manage dietary preferences?</h3>
-  <p>
-    During account setup, you can select serving sizes, diets, and ingredient restrictions. 
-    You can update these anytime in your account settings.
-  </p>
+    <h3>How do I manage dietary preferences?</h3>
+    <p>
+      During account setup, you can select serving sizes, diets, and ingredient restrictions. 
+      You can update these anytime in your account settings.
+    </p>
 
-  <h3>How will PL8 connect to grocery shopping?</h3>
-  <p>
-    In upcoming versions, you’ll be able to add missing items directly to your grocery cart 
-    and check out seamlessly with supported retailers.
-  </p>
+    <h3>How will PL8 connect to grocery shopping?</h3>
+    <p>
+      In upcoming versions, you’ll be able to add missing items directly to your grocery cart 
+      and check out seamlessly with supported retailers.
+    </p>
 
-  <h2>Troubleshooting</h2>
-  <ul>
-    <li>If the app is not responding, try restarting PL8 or your device.</li>
-    <li>Ensure you have the latest version of the app installed from the App Store.</li>
-    <li>Check your internet connection, as PL8 requires access to sync and fetch recipes.</li>
-  </ul>
+    <h2>Troubleshooting</h2>
+    <ul>
+      <li>If the app is not responding, try restarting PL8 or your device.</li>
+      <li>Ensure you have the latest version of the app installed from the App Store.</li>
+      <li>Check your internet connection, as PL8 requires access to sync and fetch recipes.</li>
+    </ul>
 
-  <h2>Contact Us</h2>
-  <p>
-    If you need more help, please reach out to our support team.  
-    Email: <a class="contact-link" href="mailto:support@novabuild.com">support@novabuild.com</a>
-  </p>
+    <h2>Contact Us</h2>
+    <p>
+      If you need more help, please reach out to our support team.  
+      Email: <a href="mailto:support@novabuild.com">support@novabuild.com</a>
+    </p>
 
-  <p>
-    For legal information, please visit our 
-    <a class="contact-link" href="https://bz2629.github.io/pl8-web/legal/">Legal & Privacy Policy</a> page.
-  </p>
+    <p>
+      For legal information, please visit our 
+      <a href="https://bz2629.github.io/pl8-web/legal/">Legal & Privacy Policy</a> page.
+    </p>
+
+    <div class="footer">
+      &copy; 2025 NovaBuild, Inc. · <a href="pl8ai://">Back to App</a>
+    </div>
+  </div>
 </body>
 </html>
